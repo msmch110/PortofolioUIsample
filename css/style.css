@@ -249,17 +249,16 @@ section {
   margin-right: 14px;
   border-right: 1px solid #000;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width:768px) {
   .posts-area-head {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .posts-area-head a {
     color: #00A8CC;
     text-decoration: none;
     font-size: 0.8em;
-    position: relative;
-    top: 8px;
   }
   .posts-content {
     flex-direction: row;
