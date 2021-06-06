@@ -4,12 +4,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: #21243D;
 }
-h1 {
-  margin-bottom: 18px
-}
+@media screen and 
 h2 {
-  font-weight: 400;
+  font-weight: 100;
   font-size: 18px;
   line-height: 60px;
 }
@@ -23,10 +22,6 @@ p, time, span {
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-}
-h2 {
-  font-size: 18px;
-  font-weight: 100;
 }
 .sp {
   display: block;
@@ -176,29 +171,56 @@ section {
 /*--------------------------------------
  introduction
 --------------------------------------*/
+
 .intro-area {
   margin-top: 50px;
   padding: 0 18px;
 }
-@media screen and (min-width: 768px) {
-  .intro-area {
-    margin-top: 0;
-  }
-}
 .intro-img {
+  height: 175px;
   margin-bottom: 25px;
+}
+.intro-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 18px;
 }
 .intro-content p {
   margin-bottom: 25px;
 }
-.intro-content button {
+.intro-button {
   color: #fff;
   background-color: #FF6464;
   border: 1px dashed #000;
   border-radius: 2px;
-  font-size: 18px;
+  font-size: 20px;
   padding: 12px 20px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .intro-area {
+    padding: 0 10px;
+    text-align: left;
+  }
+  .intro-inner {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .intro-img {
+    height: 255px;
+    margin-left: 110px;
+    margin-bottom: 0;
+  }
+  .intro-content {
+    text-align: left;
+  }
+  .intro-content p {
+    margin-bottom: 0;
+  }
+  .intro-button {
+    border: none;
+  }
 }
 /*--------------------------------------
  posts
@@ -284,9 +306,12 @@ section {
   margin: 20px auto;
 }
 @media screen and (min-width: 768px) {
+  .works-area {
+    padding: 0 10px;
+  }
   .works-title {
     font-size: 30px;
-    font-weight: 700px;
+    font-weight: 700;
   }
   .works-item {
     display: flex;
