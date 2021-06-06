@@ -70,6 +70,7 @@ header {
   content: "";
   height: 2px;
   width: 25px;
+  border-radius: 2px;
   background-color: #333;
   transition: .3s ease;
 }
@@ -84,17 +85,19 @@ header {
   position: absolute;
   top: 8px;
 }
-#gnav-input:checked ~ .icon {
+#gnav-input:checked + #gnav-open .icon {
   background-color: transparent;
 }
 
-#gnav-input:checked ~ .icon::before {
+#gnav-input:checked + #gnav-open .icon::before {
+  top: 0;
   width: 30px;
-  transform: rotate(45deg);
+  transform: rotate(135deg);
 }
-#gnav-input:checked ~ .icon::after {
+#gnav-input:checked + #gnav-open .icon::after {
+  top: 0;
   width: 30px;
-  transform: rotate(-45deg);
+  transform: rotate(-135deg);
 }
 
 .gnav-lists {
