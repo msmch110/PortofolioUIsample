@@ -10,86 +10,81 @@
   </head>
   <body>
     <header>
-      <div id="gnav-toggle" class="sp"><span></span></div>
-      <ul class="gnav-list">
-        <li><a href="#">Works</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <nav id="gnav-toggle" class="sp">
+        <input type="checkbox" id="gnav-input" class="gnav-hidden">
+        <label id="gnav-open" for="gnav-input"><span class="icon"></span></label>
+        <!-- <label id="gnav-unshown" for="gnav-input"></label> -->
+        <ul class="gnav-lists">
+          <li class="gnav-list"><a href="#" class="gnav-item">Works</a></li>
+          <li class="gnav-list"><a href="#" class="gnav-item">Blog</a></li>
+          <li class="gnav-list"><a href="#" class="gnav-item">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="pc">
+        <ul class="gnav-lists">
+          <li class="gnav-list"><a href="#" class="gnav-item">Works</a></li>
+          <li class="gnav-list"><a href="#" class="gnav-item">Blog</a></li>
+          <li class="gnav-list"><a href="#" class="gnav-item">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="intro-area">
-        <div class="intro-inner inner">
-          <img src="img/person.png" alt="">
-          <div class="intro-content">
-            <h1>Hi, I am John,<br>Creative<br class="sp">Technologist</h1>
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <button href="" type="button">Download Resume</button>
-          </div>  
-        </div>
+        <img src="img/person.png" alt="">
+        <div class="intro-content">
+          <h1>Hi, I am John,<br>Creative<br class="sp">Technologist</h1>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          <button href="" type="button">Download Resume</button>
+        </div>  
       </section>
       <section class="posts-area">
-        <div class="posts-area-inner inner">
-          <div class="posts-area-head">
-            <h3>Recent posts</h3>
-            <a href="#" class="pc">View all</a>
+        <div class="posts-area-head">
+          <h2>Recent posts</h2>
+          <a href="#" class="pc">View all</a>
+        </div>
+        <div class="posts-content">
+          <div class="posts-item">
+            <h3>Making a design system from scratch</h3>
+            <span>12 Feb 2020</span>
+            <span>Design, Pattern</span>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
           </div>
-          <div class="posts-content">
-            <div class="posts-item">
-              <h2>Making a design system from scratch</h2>
-              <dl>
-                <dt>12 Feb 2020</dt>
-                <dd>Design, Pattern</dd>
-              </dl>
-              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-            <div class="posts-item">
-              <h2>Creating pixel perfect icons in Figma</h2>
-              <dl>
-                <dt>12 Feb 2020</dt>
-                <dd>Design, Pattern</dd>
-              </dl>
-              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
+          <div class="posts-item">
+            <h3>Creating pixel perfect icons in Figma</h3>
+            <span>12 Feb 2020</span>
+            <span>Design, Pattern</span>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
           </div>
         </div>
       </section>
       <section class="works-area">
-        <div class="works-area-inner inner">
-          <h3>Featured works</h3>
-          <div class="works-item">
-            <img src="img/image_01.jpg" alt="">
-            <div class="works-item-info">
-              <h2>Designing Dashboards</h2>
-              <dl>
-                <dt>2020</dt>
-                <dd>Dashboard</dd>
-              </dl>
-              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
+        <h2>Featured works</h2>
+        <div class="works-item">
+          <img src="img/image_01.jpg" alt="">
+          <div class="works-item-info">
+            <h3>Designing Dashboards</h3>
+            <span>2020</span>
+            <span>Dashboard</span>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
           </div>
-          <div class="works-item">
-            <img src="img/image_02.jpg" alt="">
-            <div class="works-item-info">
-              <h2>Vibrant Portraits of 2020</h2>
-              <dl>
-                <dt>2018</dt>
-                <dd>illustration</dd>
-              </dl>
-              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
+        </div>
+        <div class="works-item">
+          <img src="img/image_02.jpg" alt="">
+          <div class="works-item-info">
+            <h3>Vibrant Portraits of 2020</h3>
+            <span>2018</span>
+            <span>illustration</span>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
           </div>
-          <div class="works-item">
-            <img src="img/image_03.jpg" alt="">
-            <div class="works-item-info">
-              <h2>36 Days of Malayalam type</h2>
-              <dl>
-                <dt>2018</dt>
-                <dd>Typography</dd>
-              </dl>
-              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-          </div>  
+        </div>
+        <div class="works-item">
+          <img src="img/image_03.jpg" alt="">
+          <div class="works-item-info">
+            <h3>36 Days of Malayalam type</h3>
+            <span>2018</span>
+            <span>Typography</span>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
         </div>
       </section>
     </main>
