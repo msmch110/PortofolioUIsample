@@ -5,6 +5,16 @@
   padding: 0;
   margin: 0;
 }
+h1 {
+  margin-bottom: 18px
+}
+h2, h3{
+  margin-bottom: 14px
+}
+h2 {
+  font-size: 18px;
+  font-weight: 100;
+}
 .sp {
   display: block;
 }
@@ -17,6 +27,11 @@
   }
   .pc {
     display: block;
+  }
+  .pc-width{
+    width: 860px;
+    max-width: 100%;
+    margin:0 auto;
   }
 }
 
@@ -114,40 +129,114 @@ header {
   color: #000;
 }
 @media screen and (min-width: 768px) {
+  header {
+    position: relative;
+    height: 70px;
+  }
   .gnav-lists {
     transform: none;
+    top: 0;
     flex-direction: row;
     justify-content: flex-end;
-    height: 100%;
+    height: 70px;
     padding-right: 1em;
   }
   .gnav-list {
-    padding
+    margin-right: 1.5em;
+  }
+  .gnav-item {
+    width: auto;
+    padding: .5em;
+    border-bottom: none;
+    margin-bottom: 0;    
   }
 }
 /*--------------------------------------
- メイン
+ MAIN
 --------------------------------------*/
-.inner {
-  width: 354px;
-  margin: 0 auto;
+section {
+  text-align: center;
+  padding: 0 18px;
+}
+/*--------------------------------------
+ introduction
+--------------------------------------*/
+.intro-area {
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .intro-area {
+    margin-top: 0;
+  }
+}
+.intro-img {
+  margin-bottom: 25px;
+}
+.intro-content p {
+  margin-bottom: 25px;
+}
+.intro-content button {
+  color: #fff;
+  background-color: #FF6464;
+  border: 1px dashed #000;
+  border-radius: 2px;
+  font-size: 18px;
+  padding: 12px 20px;
+  margin-bottom: 50px;
+}
+/*--------------------------------------
+ posts
+--------------------------------------*/
+.posts-area {
+  background-color: #EDF7FA;
+  padding: 15px 10px 40px;
+}
+.posts-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.post-item {
+  padding: 1em;
+  background-color: #fff;
+  text-align: left;
+}
+.post-item:first-child {
+  margin-bottom: 18px;
+}
+.post-item-subtitle {
+  margin-bottom: 18px;
+}
+.post-time {
+  padding-right: 20px;
+  margin-right: 14px;
+  border-right: 1px solid #000;
+}
 @media screen and (min-width: 768px) {
-  .inner {
-    width: 858px;
+  .posts-area-head {
+    display: flex;
+    justify-content: space-between;
+  }
+  .posts-area-head a {
+    color: #00A8CC;
+    text-decoration: none;
+    font-size: 0.8em;
+    position: relative;
+    top: 8px;
+  }
+  .posts-content {
+    flex-direction: row;
+  }
+  .post-item:first-child {
+    margin-bottom: 0;
+    margin-right: 24px;
   }
 }
-.intro-inner {
-  width: 174.38px;
-}
-
-
-
+/*--------------------------------------
+ works
+--------------------------------------*/
 
 
 /*--------------------------------------
- フッター 
+ FOOTER 
 --------------------------------------*/
